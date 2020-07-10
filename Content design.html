@@ -1,0 +1,412 @@
+<!DOCTYPE html> <!-- 21961050_박준영-->
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<style media="screen">
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+  box-sizing: border-box;
+}
+body{
+  margin:0px;
+  text-align:center;
+  background-color:#white;
+  color:black;
+  }
+/*헤더*/
+header{
+position:relative;
+z index:3p;
+}
+.nav-manu{
+  margin-top:0px;
+  margin-bottom:0px;
+  display: flex;
+  background-color:black;
+  list-style-type: none;
+  align-items: center;
+  padding-left:100px;
+  height:70px;
+  z-index:30;
+  position:relative;
+}
+#main>a{
+  text-decoration: none;
+  color: #FFDC3C
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  color:#FFDC3C
+}
+a:visited{
+  text-decoration: none;
+}
+.fakeimg a{
+  text-decoration: none;
+  color: black;
+  background-color:#f1f1f1;
+}
+.rightcolumn ul  a:hover{
+  background-color:#BDBDBD;
+  color:white;
+}
+ .nav-menu>li{
+  display:inline-block;
+}
+.element{
+padding-left:70px;
+font-size:20px;
+font-weight:bold;
+font-family: 'Noto Sans', sans-serif;
+display:inline;
+}
+.element1{
+  padding-left:819px;
+}
+#main{
+  padding-right:600px;
+  font-size:35px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight:bold;
+  color:#FFDC3C
+}
+.sub_nav{
+  position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+
+  /* 생략 */
+}
+  /*메인*/
+/* 왼쪽 레이아웃 */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+
+/* 오른쪽 레아아웃 */
+.rightcolumn {
+  width:300px;
+  background-color: #f1f1f1;
+  padding-left:20px;
+  position:absolute; right:0; top:0;
+  height:100vh;
+  z-index:10;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight:bold;
+}
+
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+  list-style-type: none;
+}
+.rightcolumn ul{
+  position:absolute;
+  top:50%; transform:translateY(-50%);
+}
+
+.card {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 본문*/
+
+p{
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align:center;
+  margin:10px;
+}
+.first{
+ font-size: 40px;
+ font-weight:bold;
+ margin-bottom:100px;
+}
+.m{
+  font-size: 40px;
+  font-weight:bold;
+  margin-bottom:20px;
+    margin-top:400px;
+}
+.mm{
+  font-size: 45px;
+  font-weight:bold;
+    margin-bottom:20px;
+    margin-top:400px;
+}
+.content{
+  font-size:17px;
+  font-weight:bold;
+  opacity: 0.6;
+}
+.hh{
+  font-size:25px;
+  font-weight:bold;
+  text-align:left;
+  vertical-align: bottom;
+}
+.bb{
+  font-size:18px;
+  text-align:left;
+  opacity: 0.7;
+}
+.bbb{
+  font-size:21px;
+  opacity: 0.7;
+}
+.table_1{
+  margin:0 40px 0px 60px;
+  text-align:left;
+}
+.table_1 td{
+  vertical-align: bottom;
+}
+.table_2 img{
+  width:500px;
+}
+.table_2 td{
+  padding:5px;
+}
+.table_2{
+  display:flex;
+  justify-content: center;
+  alin-item:center;
+}
+.space{
+  margin-bottom:100px;
+}
+.videoo{
+  padding-left:150px;
+}
+.videoo table{
+  padding-left:20px;
+}
+
+/* Footer */
+
+footer{
+  position:relative;
+  padding:20px 20px 20px 20px;
+  border-top:solid 2px black;
+  color:#666666;
+  margin-top:100px;
+  text-align:right
+  text-decoration: none;
+  width:100%;
+  list-style: none;
+
+}
+footer #address{
+  float:left;
+}
+footer #link{
+  float:right;
+}
+footer #footer_menu li{
+  margin-top:5px;
+  list-style: none;
+  float:left;
+
+}
+footer #company_info{
+  margin-top:20px;
+  list-style: none;
+
+}
+footer #company_info li{
+  margin-top:2px;
+  list-style: none;
+  float:left;
+}
+footer #copyright{
+  maergine-top:10px;
+  font-size:11px;
+  color:#888888;
+}
+footer #link h3{
+  font-size:16px;
+  color:black;
+}
+footer #link select{
+  margin:5px 0 0 50px;
+  width:100px;
+  height":18px;
+  font-size:11px;
+}
+footer #icons{
+  margin-top:5px;
+  text-align:right;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul class="nav-manu">
+      <li id= "main"><a href="index_21961050.html">JUNE</a></li>
+      <div class="element1">
+      <li class="element"><a href="icon0.html">2020</a></li>
+      <li class="element"><a href="Content design.html">2019</a></li>
+      </div>
+    </ul>
+  </nav>
+</header>
+<!--내용-->
+<main>
+<div class="row">
+  <!--왼쪽-->
+  <div class="leftcolumn">
+    <div class="card">
+      <main>
+      <br><br><br>
+      <p class="content">CONTENT DESIGN</p>
+      <p class="first">점성술 서비스</p>
+      <div class=" back_1">
+      <table class="table_1">
+      <tr>
+        <td rowspan="2">
+          <img src="img/som.png" width="93%">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="hh">오늘 당신의 운세는 어떤가요?</p>
+          <p class="bb">점성술 서비스를 통해 오늘의 오늘 나의 운세를 알고, 그 운세의 결과를스스로 바꿀 수 있도록 도와주는 컨텐츠 제작 하였습니다. </p>
+        </td>
+      </tr>
+      </table>
+      </div>
+      <div class="videoo">
+      <p class="m">서비스 영상</p>
+      <div class="space">
+      <p class="bbb"> 사용자 시점에서 서비스 이용 영상</p>
+      </div>
+      <video  width="98%" controls autoplay>
+        <source src="mp3/점성술/영상.mp4" type="video/mp4">
+      </video>
+      <br><br>
+      </div>
+
+      <div class="videoo">
+      <table class="table_2">
+        <p class="mm"> 스토리 아트보드</p>
+        <div class="space">
+        <p class="bbb"> 사용자가 본격적으로 서비스를
+        이용하기전 몰입도를 위하여 간단한 스토리식으로 소개</p>
+        </div>
+      <tr>
+        <td><img src="img/1.png"></td>
+        <td><img src="img/2.png"></td>
+        <td><img src="img/3.png"></td>
+      </tr>
+      <tr>
+        <td><img src="img/4.png"></td>
+        <td><img src="img/5.png"></td>
+        <td><img src="img/6.png"></td>
+      </tr>
+      <tr>
+        <td><img src="img/7.png"></td>
+        <td><img src="img/8.png"></td>
+      <td><img src="img/9.png"></td>
+    </tr>
+    </table>
+    </div>
+
+    <div class="videoo">
+    <table class="table_2">
+      <p class="mm"> 모션 아트보드</p>
+      <div class="space">
+      <p class="bbb">컨텐츠에서 사용자가 이용할 수 있는 주 서비스</p>
+      </div>
+    <tr>
+      <td><img src="img/모션/1.gif"></td>
+      <td><img src="img/모션/2.gif"></td>
+      <td><img src="img/모션/3.png"></td>
+    </tr>
+    <tr>
+      <td><img src="img/모션/4.gif"></td>
+      <td><img src="img/모션/5.png"></td>
+      <td><img src="img/모션/6.gif"></td>
+    </tr>
+    <tr>
+      <td><img src="img/모션/7.png"></td>
+      <td><img src="img/모션/8.png"></td>
+    </tr>
+    </table>
+    </div>
+    <br><br><br>
+  <!--오른쪽-->
+<div class="sub_nav">
+  <nav class="rightcolumn">
+    <div class="card">
+      <ul>
+        <li class="fakeimg"><a href="Content design.html">CONTENT DESIGN</a></li>
+        <li class="fakeimg"><a href="motion.html">MOTION</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!--푸터-->
+<div class="page">
+  <footer>
+    <article id="address">
+      <ul id="footer_menu">
+        <li>개인정보 취급방침 ㅣ 이용안내 ㅣ 포트폴리오</li>
+        <li> 이용약관 ㅣ 연락처 ㅣ 문의하기 ㅣ JUNE</li>
+      </ul>
+      <ul id="company_info">
+        <li>21961050 박준영</li>
+        <li>계원예술대학교</li>
+        <li>주소 : 경기도 의왕시 내손동 계원예술대학교 디자인관</li>
+        <li>전화 : (02)123-4567, FAX : (02)123-4747</li>
+        <li id="copyright">copyright by Roboto Company All Rights Reserved.</li>
+      </ul>
+    </article>
+    <article id="link">
+      <h3>SNS 바로가기</h3>
+      <select>
+        <option>네이버</option>
+        <option>다음</option>
+        <option>구글</option>
+      </select>
+      <div id="icons">
+        <img src="img/f.jpg">
+        <img src="img/b.jpg">
+        <img src="img/t.jpg">
+      </div>
+    </article>
+  </footer>
+
+</main>
+</body>
+</html>
